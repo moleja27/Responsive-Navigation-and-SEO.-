@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+header{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #2868C4;
+    padding: 2rem;
+}
+
+
+
+.label {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100vh;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+
+nav{
+    width: 100%;
+
+    
+}
+
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color:#ffff;
+}
+
+
+
