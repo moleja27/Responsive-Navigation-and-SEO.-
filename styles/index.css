@@ -12,28 +12,23 @@ header{
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    background-color: #2868C4;
+    background-color: #9962a7;
     padding: 2rem;
-}
-
-
-
-.label {
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100vh;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
-}
-
-
-nav{
     width: 100%;
-
-    
 }
+
+
+
+.img {
+    padding: 0 100vh;
+    padding: 0 100px;
+    max-width: 5rem;
+    border-radius: 30px;
+    display: block;
+}
+
+
+
 
 .nav-list{
     list-style-type: none;
@@ -41,10 +36,55 @@ nav{
     gap: 1rem;
 }
 
+
 .nav-list li a{
     text-decoration: none;
-    color:#ffff;
 }
+
+.nav-list li a:hover{
+    background-color: #d19cc2;
+    transition: .5s;
+    color: black;
+}
+
+.closehamburguer, .hamburguer{
+    display: none;
+}
+
+@media screen and (max-width: 450px) {
+   
+    .hamburguer{ 
+     display:block; 
+    }  
+
+    .nav{
+     display:none 
+    }
+
+    .nav{ 
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #a724c8;
+    padding: 2rem;
+    box-shadow: 0 0 100vmax rgba(0 0 0 5,);
+    }
+
+   .nav-list{
+    flex-direction: column;
+    align-items: end;
+   }
+
+   .nav-list li a{
+    color: white;
+}
+}
+    
 
 
 
